@@ -11,7 +11,7 @@ Link for the whole pipeline and docker image repo: https://github.com/nsh23/pach
 7) Gene annotation to CpG sites
 
 The following graph describes the processing flow in a pipeline and step dependencies:
-![Pipeline graph](img/dnam_pachy_pipe.png)
+![Pipeline graph](img/dna_pachy_pipe.png)
 
 - Requirements:
 R, minfi, CopyNumber450k, IlluminaHumanMethylationEPICanno.ilm10b2.hg19, IlluminaHumanMethylationEPICmanifest,
