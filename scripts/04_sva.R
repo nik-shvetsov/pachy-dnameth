@@ -33,6 +33,11 @@ cohortSVA <- function(ss, bmat, cohort) {
 
 pdata_df <- as.data.frame(pdata, stringsAsFactor=FALSE)
 pdata_df[pdata_df==""] <- NA
+
+if (is.null(pdata$Cohort) || is.null(pdata$CaseControl)) {
+	stop("No information about cohorts or case/control status. Should be df with 'Cohort' and 'CaseControl' information. Unable to perform sva")
+}
+
 cohorts <- unique(pdata_df$Cohort)[!is.na(unique(pdata_df$Cohort))]
 
 print ("Available cohorts:")
